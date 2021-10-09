@@ -1,0 +1,84 @@
+.main-container{
+    width: 90%;
+    margin: auto;
+}
+.main-slider img{
+    width: 100%;
+}
+.heading{
+    margin-bottom: 2rem;
+}
+
+.heading-title, .heading-picture{
+    font-size: 3rem;
+}
+
+.new-box{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.news, .course, .notification{
+    margin: 3rem 0;
+}
+
+.side-new-item, .news, .course-list, .notification, .addmission-item, .event-item{
+    display: flex;
+}
+.admissions{
+    margin-right: 5rem;
+}
+
+.addmission-item, .event-item{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.addmission-time  {
+    font-size: 2rem;
+    text-align: center;
+    background-color: #2E69DB;
+    color: white;
+}
+
+.event-time{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #2ea4db;
+    color: white;
+}
+
+
+.addmission-item-heading, .event-item-heading{
+    padding: 1rem 1rem;
+}
+
+.new-meta{
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.course-picture{
+    border: 1px solid gray;
+}
+
+
+@media screen and (min-width: 992px) {
+    .main-slider{
+        border: 1px solid black;
+    }
+
+    .flex{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .side-new-item, .notification{
+        display: block;
+    }
+
+    .course-list{
+        flex-wrap: wrap;
+    }
+}
