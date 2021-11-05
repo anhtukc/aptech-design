@@ -1,0 +1,73 @@
+
+
+.course-subjects img{
+    margin: 3%;
+}
+
+.main{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 0 1rem;
+}
+
+.course-advance{
+    font-size: 2.5rem;
+}
+.course-advance table{
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(245, 245, 245);
+}
+
+.course-advance .far{
+    color: rgba(8, 8, 8, 0.877);
+}
+.course-header{
+    margin: 3rem auto 3rem;
+    color: rgb(250, 250, 250);
+    background-color: #b92929;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.course-moduls{
+    display: flex;
+    text-align: center;
+}
+
+.course-signup-form{
+    border: 1px solid rgb(8, 106, 151);
+    border-radius: 5px;
+    padding: 2rem;
+    
+}
+
+.Signup-checkbox{
+    
+    border: 1px solid rgb(94, 6, 6);
+    padding: 1rem;
+}
+
+.Signup-checkbox .form-check{
+    margin-right: 5%;
+}
+
+.button{
+    background-color: #b92929;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 3rem;
+}
+
+.form-row input,select{
+   padding: 0.5rem 1rem;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+.form-row input:hover,select:hover{
+   border: 1px solid #b92929;
+ }
