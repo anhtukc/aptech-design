@@ -3,7 +3,6 @@ a{
     color: black;
 }
 .main{
-   display: flex;
    margin: 2rem auto;
 }
 
@@ -25,4 +24,10 @@ a{
 
 .relate-new-item{
     margin-left: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .main{
+        display: flex;
+    }
 }

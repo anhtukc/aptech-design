@@ -13,7 +13,19 @@
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/course.css">
+
 </head>
+<style>
+    #lb{
+        background-image: url("images/word.png");
+        height: 30px;
+        width: 30px;
+    }
+    #lb:hover{
+        background-image: url("images/excel.jpg");
+
+    }
+</style>
 <body>
     <nav>
         <div class="authorization col-12">
@@ -88,21 +100,19 @@
         </div>
        
    </nav>
-
+   <div id="lb"></div>
     <div class="main col-lg-10 margin-auto">
         <h1 class="course-header col-lg-8 margin-auto">Chuẩn tin học B++</h1>
         <div class="course-introduct area-margin">
             <h2>I.Giới thiệu về chuẩn đầu ra tin học B++</h2>
             <div class="col-12">
-                <ul>
-                    <li>Chuẩn đầu ra tin học B++ là một trong hai điều kiện tiên quyết để sinh viên có thể lấy bằng tốt nghiệp và ra trường</li>
-                </ul>
-                <ul>
-                    <li>Chuẩn đầu ra tin học B++ bao gồm 4 Modul, mỗi Modul là một kỹ năng khác nhau trong lĩnh vực tin học đòi hỏi sinh viên phải có các kiến thức nền tảng để vượt qua các lần Test.</li>
-                </ul>
-                <ul>
-                    <li>Chuẩn đầu ra B++ với hệ thống Test hoàn toàn tự động giúp mang lại kết quả chính xác, khách quan.</li>
-                </ul>  
+         
+                    <p>Chuẩn đầu ra tin học B++ là một trong hai điều kiện tiên quyết để sinh viên có thể lấy bằng tốt nghiệp và ra trường</p>
+                
+                    <p>Chuẩn đầu ra tin học B++ bao gồm 4 Modul, mỗi Modul là một kỹ năng khác nhau trong lĩnh vực tin học đòi hỏi sinh viên phải có các kiến thức nền tảng để vượt qua các lần Test.</l>
+               
+                    <p>Chuẩn đầu ra B++ với hệ thống Test hoàn toàn tự động giúp mang lại kết quả chính xác, khách quan.</p>
+              
             </div>
         </div>
        
@@ -128,86 +138,36 @@
             </div>
 
         </div>      
-        <div class="course-duration area-margin">
-            <h2>III. Thời lượng học</h2>
-            <table class="table table-bordered">
-                <tr>
-                    <th class="bg-danger text-white">Môn học</th>
-                    <td>WORD</td>
-                    <td>EXCEL</td>
-                    <td>PHOTOSHOP</td>
-                    <td>ORIGIN</td>
-                </tr>
-                <tr>
-                    <th class="bg-danger text-white">Thời lượng</th>
-                    <td>10 tiếng</td>
-                    <td>10 tiếng</td>
-                    <td>10 tiếng</td>
-                    <td>10 tiếng</td>
-                </tr>
-            </table>
-        </div>
+        
         
 
         <div class="course-fees-and-laws">
             <h1>III. Kiểm tra, test</h1>
             <div class="col-12">
-                <p>Sinh viên có thể đăng ký toàn khóa học hoặc đăng ký Modul. Tuy nhiên học phần Word phải đăng ký cùng học phần Excel và học phần Photoshop phải đăng ký cùng học phần Origin.</p>
-                <p>Lệ phí học: <span class="text-danger">200,000đ</span>/Modul</p>
-                <p>Sinh viên có thể đăng ký test chuẩn đầu ra mà không tham gia học.</p>
-                <p>Lệ phí test: <span class="text-danger">30,000đ</span>/1 Modul/ 1 lần thi</p>
+               
             </div>
         </div>
        
         <div class="course-signup-form col-lg-12 col-sm-11 margin-auto area-margin">
                 
                 <form action="" class="signup-form col-12 nopadding">
-                    <div >
-                        <h3>Modul</h3>
-                        <div class="Signup-checkbox">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="checkbox" id="checkall" >
-                                <label class="form-check-label" for="inlineCheckbox1">Toàn bộ khóa học(gồm 4 Modul)</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input course-modul-check" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Word</label>
-                            </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input course-modul-check" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Excel</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input course-modul-check" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Photoshop</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input course-modul-check" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">Origin</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="notest" value="option1">
-                                <label class="form-check-label " for="inlineCheckbox1">Test không tham gia học</label>
-                              </div>
-                        </div>
-                        
-                    </div>
+                    
                     
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Họ và tên</label>
+                            <label for="inputEmail4">Họ và tên<span class="required">*</span>:</label>
                            <div>
                                 <input type="email" class="col-12 input-large" id="" placeholder="Lê Văn A">
                            </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email:</label>
+                            <label for="inputEmail4">Email<span class="required">*</span>:</label>
                             <div>
                                 <input type="email" class="col-12" id="" placeholder="email@gmail.com">
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Số diện thoại:</label>
+                            <label for="inputEmail4">Số diện thoại<span class="required">*</span>:</label>
                             <div>
                                 <input type="email" class="col-12" id="" placeholder="0972615261">
                             </div>
@@ -218,8 +178,20 @@
                                 <input type="date" class="col-12" id="" >
                             </div>
                         </div>
+                        <div class="col-6">
+                            <label for="">Tỉnh/Thành Phố<span class="required">*</span>: </label>
+                        <select name="calc_shipping_provinces" required="">
+                            <option value="">Tỉnh / Thành phố</option>
+                          </select>
+                        </div>
+                          <div class="col-6">
+                            <label for="">Huyện<span class="required">*</span>: </label>
+                            <select name="calc_shipping_district" required="">
+                              <option value="">Quận / Huyện</option>
+                            </select>
+                          </div>
                         <div class="form-group col-md-12">
-                            <label for="inputEmail4">Địa chỉ:</label>
+                            <label for="inputEmail4">Xã<span class="required">*</span>:</label>
                             <div>
                                 <input type="text" class="col-12" id="" >
                             </div>
@@ -239,6 +211,10 @@
                                 <option value="">Thứ 2, 7 tháng 11 2021</option>
                                 <option value="">Thứ 2, 7 tháng 11 2021</option>
                             </select>
+                        </div>
+                        <div>
+                            <span class="col-3">Lệ phí học: <span class="text-danger">800,000đ</span></span>
+                            <span>Lệ phí test: <span class="text-danger">120,000đ</span></span>
                         </div>
                     </div>
 

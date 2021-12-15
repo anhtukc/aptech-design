@@ -10,17 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/signlepagedetail.css">
     
 </head>
 <body>  
     <nav>
-        <div class="authorization col-12">
-            <a class="" href="signup.html">
-                Đăng ký
-            </a>     
+        <div class="authorization col-12">  
             <a class="" href="signin.html">
                 Đăng nhập
             </a>
@@ -35,7 +32,7 @@
             <div id="my-nav" class="container-fullwidth collapse navbar-collapse col-lg-9  col-xl-9">
                 <ul class="navbar-nav mr-auto nav-width ">
                     <li class="nav-item nav-active">
-                        <a class="nav-link navbar-link-customer" href="tintuc.html" >Giới thiệu</a>
+                        <a class="nav-link navbar-link-customer" href="gioithieu.html" >Giới thiệu</a>
                     
                     </li>
                     <li class="nav-item dropdown-nav-list nav-active">
@@ -55,14 +52,14 @@
                             data-toggle="dropdown">Thư viện</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="my-dropdown">
-                                <a class="dropdown-item " href="#">Tài liệu </a>
-                                <a class="dropdown-item " href="#">Đề cương </a>
-                                <a class="dropdown-item " href="#">Câu hỏi trắc nghiệm</a>
+                                <a class="dropdown-item " href="tailieu.html">Tài liệu </a>
+                                <a class="dropdown-item " href="decuong.html">Đề cương </a>
+                                <a class="dropdown-item " href="cauhoiontap.html">Câu hỏi trắc nghiệm</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item nav-active">
-                        <a class="nav-link navbar-link-customer" href="#">
+                        <a class="nav-link navbar-link-customer" href="tuyensinh.html">
                             Lịch khai giảng
                         </a>
                     </li>
@@ -77,12 +74,32 @@
             </div>
              <form class="form-inline formsearch hide-mobile">
                 <i class="fa fa-search dropdpwm-toggle" data-toggle="dropdown"></i>   
-                <div class="dropdown">
-                    <div class="dropdown-menu" aria-labelledby="my-dropdown">
+                <div class="dropdown search_container">
+                    <div class="dropdown-menu search_place" aria-labelledby="my-dropdown">
                         <div class="dropdown-item">
-                                <input class="search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                                <button class="searchbtn" type="submit"><i class="fa fa-search"></i></button>
-                        </div>
+                                <div class="flex">
+                                    <span class="col-2">Tên: </span>
+                                    <input class="search-input col-10" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                                </div>
+                                <div class="flex">
+                                    <span class="col-2">Đề mục: </span>
+                                        <select class="col-10" name="" id="">
+                                            <option value="">Thư viện</option>
+                                            <option value="">Tin tức</option>
+                                            <option value="">Lịch khai giảng</option>
+
+                                        </select>
+                                </div>
+                                <div class="flex">      
+                                    <span class="col-2">Từ ngày:</span>
+                                    <input class="col-4" type="date" name="" id="">
+                                    <span class="col-2">Đến ngày: </span>
+                                    <input class="col-4" type="date" name="" id=""></Input:date>
+                                </div>
+                                <div class="search-btn-place">
+                                    <button class="searchbtn col-lg-3 col-sm-12"> Tìm kiếm</button>
+                                </div>
+                            </div>
                     </div>
                 </div> 
             </form>   
@@ -91,7 +108,7 @@
    </nav>
 
     <div class="main col-lg-11 margin-auto">
-       <div class="col-lg-7 new-detail">
+       <div class="col-lg-8 new-detail">
             <div class="heading">
                 <h1>3 buổi trải nghiệm xây dựng Website cùng Khoá học NHẬP MÔN PHÁT TRIỂN PHẦN MỀM</h1>
                 <div class="new-meta">
@@ -109,9 +126,9 @@
             <p>Sau khi được giới thiệu những kiến thức lý thuyết cơ bản, các bạn đã bắt tay vào thực hiện lập trình Website cơ bản thông qua 1 công cụ được giảng viên chuẩn bị trước. Ở 2 buổi học còn lại, các bạn sẽ tập trung phát triển từng chức năng trong Website của mình thông qua sự hướng dẫn từ thầy. Với phương pháp giảng dạy lý thuyết kết hợp thực hành ngay tại chỗ, các bạn có thể dễ dàng ghi nhớ các thao tác của mình, bên cạnh đó giảng viên còn có thể theo dõi và điều chỉnh cho các bạn ngay tại lớp học.</p>
             <p>Sau khoá học, các bạn đã có thể tự hoàn thiện 1 Website với những tính năng cơ bản cần có. Đối với những bạn hoàn tất đầy đủ cả 3 buổi học sẽ được cấp chứng nhận hoàn thành khoá học NHẬP MÔN PHÁT TRIỂN PHẦN MỀM từ Aptech. Với những thành tích đầu tiên này, hi vọng rằng các bạn đã có cho bản thân những niềm tin và động lực nhất định để theo đuổi ngành CNTT.</p>
        </div>
-        <div class="col-lg-5 relate-new">
-            <div class="heading">
-                <h1>Tin liên quan</h1>
+        <div class="col-lg-4 relate-new">
+            <div class="heading col-12">
+                <h2>Tin liên quan</h2>
             </div>
             <div>
                 <div class="col-12 relate-new-item">
@@ -121,7 +138,7 @@
                             <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                             <small><i class="fa fa-eye"></i> Views: 1000</small>
                         </div>   
-                        <a href="trangchitiettintuc.html"><h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> </a> 
+                        <a href="trangchitiettintuc.html"><h4 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h4> </a> 
                     </div>        
     
                 </div>
@@ -132,7 +149,7 @@
                             <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                             <small><i class="fa fa-eye"></i> Views: 1000</small>
                         </div>   
-                        <a href="trangchitiettintuc.html"><h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> </a> 
+                        <a href="trangchitiettintuc.html"><h4 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h4> </a> 
                     </div>        
     
                 </div>
@@ -143,7 +160,7 @@
                             <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                             <small><i class="fa fa-eye"></i> Views: 1000</small>
                         </div>   
-                        <a href="trangchitiettintuc.html"><h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> </a> 
+                        <a href="trangchitiettintuc.html"><h4 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h4> </a> 
                     </div>        
     
                 </div>
@@ -154,18 +171,7 @@
                             <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                             <small><i class="fa fa-eye"></i> Views: 1000</small>
                         </div>   
-                        <a href="trangchitiettintuc.html"><h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> </a> 
-                    </div>        
-    
-                </div>
-                <div class="col-12 relate-new-item">
-                    <img class="col-4" src="images/tin-tuyen-dung.jpg" alt="">
-                    <div>
-                        <div class="new-meta">
-                            <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
-                            <small><i class="fa fa-eye"></i> Views: 1000</small>
-                        </div>   
-                        <a href="trangchitiettintuc.html"><h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> </a> 
+                        <a href="trangchitiettintuc.html"><h4 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h4> </a> 
                     </div>        
     
                 </div>

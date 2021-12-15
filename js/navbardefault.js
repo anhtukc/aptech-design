@@ -5,3 +5,7 @@ window.addEventListener("scroll", function(){
     myNav.classList.toggle('scrolled', scrollery >0);
     console.log('work' + scrollery);
 })
+
+$(document).on('click', '.search_container .dropdown-menu', function (e) {
+    e.stopPropagation();
+  });

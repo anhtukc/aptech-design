@@ -94,16 +94,49 @@ nav{
     color: white;
 }
 
+
+.search_place{
+    
+    background-color: white;
+position: absolute;
+width: 90vw;
+top:3rem;
+left: -90vw ;
+height: 40vh;
+padding: 2rem 10rem;
+}
+.search_place .dropdown-item div{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.search_place .dropdown-item{
+    background-color: white;
+    color:black;
+}
+.search_place .dropdown-item:active{
+    background-color: white;
+    color:black;
+
+}
 .search-input{ 
     border:1px solid black;
     padding: 0 0.5rem;
 }
 
-.searchbtn{
-    border: 1px solid black;
-    background-color: transparent;
+.search-btn-place{
+   text-align: right;
 }
 
+.searchbtn{
+    border: 1px solid transparent;
+    background-color: #b92929;
+    color: white;
+}
+
+.searchbtn:active{
+    background-color: antiquewhite;
+    color: black;
+}
 .messager{
     position: fixed;
     top: 80%;
@@ -137,7 +170,14 @@ nav{
 .authorization a:hover{
     color: rgb(255, 241, 241);
 }
+.news-detail{
+    color: rgb(116, 116, 116);
+}
 
+.new-meta{
+    color: gray;
+    font-size: 1.4rem;
+}
 /*hover only affect when device is a desktop*/
 @media only screen and (min-width: 992px) {
     .navbar{
@@ -190,15 +230,8 @@ nav{
         margin-left: 4rem;
         position: relative;
     }
-    
-    .formsearch .dropdown .dropdown-menu{
-        top: 3rem;
-        left: -25rem;
-    }
 
-    .formsearch .dropdown .dropdown-item{
-        display: flex;
-    }
+
     
     .authorization:hover {      
         color: #b92929;

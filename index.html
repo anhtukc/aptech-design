@@ -13,13 +13,13 @@
 <script src="https://kit.fontawesome.com/73ebdd764c.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/main-page.css">
 </head>
+<style>
+    
+</style>
 <body>
     
    <nav>
-        <div class="authorization col-12">
-            <a class="" href="signup.html">
-                Đăng ký
-            </a>     
+        <div class="authorization col-12">  
             <a class="" href="signin.html">
                 Đăng nhập
             </a>
@@ -54,14 +54,14 @@
                             data-toggle="dropdown">Thư viện</a>
                         <div class="dropdown">
                             <div class="dropdown-menu" aria-labelledby="my-dropdown">
-                                <a class="dropdown-item " href="#">Tài liệu </a>
-                                <a class="dropdown-item " href="#">Đề cương </a>
-                                <a class="dropdown-item " href="#">Câu hỏi trắc nghiệm</a>
+                                <a class="dropdown-item " href="tailieu.html">Tài liệu </a>
+                                <a class="dropdown-item " href="decuong.html">Đề cương </a>
+                                <a class="dropdown-item " href="cauhoiontap.html">Câu hỏi trắc nghiệm</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item nav-active">
-                        <a class="nav-link navbar-link-customer" href="#">
+                        <a class="nav-link navbar-link-customer" href="tuyensinh.html">
                             Lịch khai giảng
                         </a>
                     </li>
@@ -76,30 +76,47 @@
             </div>
              <form class="form-inline formsearch hide-mobile">
                 <i class="fa fa-search dropdpwm-toggle" data-toggle="dropdown"></i>   
-                <div class="dropdown">
-                    <div class="dropdown-menu" aria-labelledby="my-dropdown">
+                <div class="dropdown search_container">
+                    <div class="dropdown-menu search_place" aria-labelledby="my-dropdown">
                         <div class="dropdown-item">
-                                <input class="search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-                                <button class="searchbtn" type="submit"><i class="fa fa-search"></i></button>
-                        </div>
+                                <div class="flex">
+                                    <span class="col-2">Tên: </span>
+                                    <input class="search-input col-10" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                                </div>
+                                <div class="flex">
+                                    <span class="col-2">Đề mục: </span>
+                                        <select class="col-10" name="" id="">
+                                            <option value="">Thư viện</option>
+                                            <option value="">Tin tức</option>
+                                            <option value="">Lịch khai giảng</option>
+
+                                        </select>
+                                </div>
+                                <div class="flex">      
+                                    <span class="col-2">Từ ngày:</span>
+                                    <input class="col-4" type="date" name="" id="">
+                                    <span class="col-2">Đến ngày: </span>
+                                    <input class="col-4" type="date" name="" id=""></Input:date>
+                                </div>
+                                <div class="search-btn-place">
+                                    <button class="searchbtn col-lg-3 col-sm-12"> Tìm kiếm</button>
+                                </div>
+                            </div>
                     </div>
                 </div> 
             </form>   
         </div>
        
    </nav>
-
-    <div class="main-slider col-lg-12 nopadding">
-        <img class="col-lg-12 nopadding" src="images/tuyensinh.jpg" alt="">
-    </div>
+  
 
     <div class="main-container">
         <div class="course">
             <div class="col-lg-12 col-sm-12">
-                <div class="heading">
+                <div class="heading col-12">
                     <span class="heading-title"> 
                         <i class="fa fa-book-open"></i> 
-                        Khóa học nổi bật
+                        Khóa học 
                     </span>
                 </div>
                 <div class="course-list">
@@ -148,15 +165,17 @@
         </div>
 
         <div class="notification">
-            <div class="admissions col-lg-5 col-sm-12 nopadding">
-                <div class="heading">
-                    <span class="heading-title"> 
-                        <i class="fas fa-school"></i> 
-                        Tuyển sinh
-                    </span>
+            <div class="admissions col-lg-12 col-sm-12 nopadding">
+                <div class="col-12">
+                    <div class="heading nopadding">
+                        <span class="heading-title"> 
+                            <i class="fas fa-school"></i> 
+                            Tuyển sinh
+                        </span>
+                    </div>
                 </div>
-                <div class="admission-list col-lg-12">
-                    <div class="addmission-item col-lg-12 nopadding">
+                <div class="admission-list col-lg-12 d-flex ">
+                    <div class="addmission-item  nopadding">
                         <div class="addmission-time col-2 nopadding p-3">
                             <span>30-5</span>
                             <div class="border-ruler col-lg-11 margin-auto "></div>
@@ -166,7 +185,7 @@
                             <h3>Mở đợt tuyển sinh khóa học B++ từ ngày 30/5/2021</h3>
                         </div>
                     </div>
-                    <div class="addmission-item col-lg-12 nopadding">
+                    <div class="addmission-item nopadding">
                         <div class="addmission-time col-2 nopadding p-3">
                             <span>30-5</span>
                             <div class="border-ruler col-lg-11 margin-auto "></div>
@@ -176,7 +195,17 @@
                             <h3>Mở đợt tuyển sinh khóa học B++ từ ngày 30/5/2021</h3>
                         </div>
                     </div>
-                    <div class="addmission-item col-lg-12 nopadding">
+                    <div class="addmission-item nopadding">
+                        <div class="addmission-time col-2 nopadding p-3">
+                            <span>30-5</span>
+                            <div class="border-ruler col-lg-11 margin-auto "></div>
+                            <span>2021</span>
+                        </div>
+                        <div class="addmission-item-heading">
+                            <h3>Mở đợt tuyển sinh khóa học B++ từ ngày 30/5/2021</h3>
+                        </div>
+                    </div>
+                    <div class="addmission-item nopadding">
                         <div class="addmission-time col-2 nopadding p-3">
                             <span>30-5</span>
                             <div class="border-ruler col-lg-11 margin-auto "></div>
@@ -188,27 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="events col-lg-5 col-sm-12 nopadding">
-                <div class="heading">
-                    <span class="heading-title"> 
-                        <i class="far fa-calendar-alt"></i>          
-                            Sự kiện
-                    </span>
-                </div>
-                <div class="event-list col-lg-12">
-                    <div class="event-item col-lg-12 nopadding">
-                        <div class="event-time col-2 nopadding p-3">
-                            <span>30-7</span>
-                            <div class="border-ruler col-lg-11 margin-auto "></div>
-                            <span>2021</span>
-                        </div>
-                        <div class="event-item-heading">
-                            <h3>Cuộc thi tìm hiểu công nghệ thông tin</h3>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+           
         </div>
         <div class="news">
             <div class=" col-lg-12 col-sm-12">       
@@ -226,7 +235,7 @@
                             <small><i class="fa fa-eye"></i> Views: 1000</small>
                         </div>            
                         <h2 class=" title">5 phút phá toang băn khoăn: Nghề gì lương cao mà không thất nghiệp?</h2>   
-                                  
+                        <p class="news-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </div>
                     <div class="side-new col-md-12 col-lg-7 nopadding">
                         <div class="col-lg-12 col-sm-6  new-box side-new-item">               
@@ -236,7 +245,9 @@
                                     <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                                     <small><i class="fa fa-eye"></i> Views: 1000</small>
                                 </div>   
-                                <h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2>          
+                                <h2 class="title">Lương kỹ sư IT có thể đến 100 triệu mỗi tháng</h2> 
+                                <p class="news-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+         
                            </div>
                         </div>
                         <div class="col-lg-12 col-sm-6  new-box side-new-item">               
@@ -246,7 +257,9 @@
                                     <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                                     <small><i class="fa fa-eye"></i> Views: 1000</small>
                                 </div>   
-                                <h2 class=" title">Giải đáp những thắc mắc kinh điển về nghề Lập trình</h2>          
+                                <h2 class=" title">Giải đáp những thắc mắc kinh điển về nghề Lập trình</h2>  
+                                <p class="news-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+        
                            </div>
                         </div>
                         <div class="col-lg-12 col-sm-6 new-box side-new-item">               
@@ -256,7 +269,9 @@
                                     <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                                     <small><i class="fa fa-eye"></i> Views: 1000</small>
                                 </div>   
-                                <h2 class=" title">Năm vượt sóng của doanh nghiệp công nghệ số</h2>          
+                                <h2 class=" title">Năm vượt sóng của doanh nghiệp công nghệ số</h2>   
+                                <p class="news-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+       
                            </div>
                         </div>
                         <div class="col-lg-12 col-sm-6 new-box side-new-item">               
@@ -266,7 +281,9 @@
                                     <small><i class="fa fa-calendar"></i> Ngày đăng: 19-03-2001</small>
                                     <small><i class="fa fa-eye"></i> Views: 1000</small>
                                 </div>   
-                                <h2 class=" title">Năm vượt sóng của doanh nghiệp công nghệ số</h2>          
+                                <h2 class=" title">Năm vượt sóng của doanh nghiệp công nghệ số</h2>  
+                                <p class="news-detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+        
                            </div>
                         </div>
                     </div>
